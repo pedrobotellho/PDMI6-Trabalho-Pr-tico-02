@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TP02.FormProduto">
+    <ContentPage.Content>
+        <Grid Margin="1" VerticalOptions="CenterAndExpand">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Label Text="ID" Grid.Row="0" Grid.Column="0"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+            <Entry x:Name="Id" Text="{Binding Id}" Grid.Row="0" Grid.Column="1"  Grid.ColumnSpan="2"/>
+            <Label Text="Descricao" Grid.Row="1" Grid.Column="0"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+            <Entry x:Name="Descricao" Text="{Binding Descricao}" Grid.Row="1" Grid.Column="1"  Grid.ColumnSpan="2"/>
+            <Label Text="Categoria" Grid.Row="2" Grid.Column="0"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+            <Entry x:Name="Categoria"  Text="{Binding Categoria}" Grid.Row="2" Grid.Column="1"  Grid.ColumnSpan="2"/>
+            <Label Text="Quantidade" Grid.Row="3" Grid.Column="0"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+            <Entry x:Name="Quantidade"  Text="{Binding Quantidade}" Grid.Row="3" Grid.Column="1"  Grid.ColumnSpan="2"/>
+            <Label Text="Preço" Grid.Row="4" Grid.Column="0"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+            <Entry x:Name="Preco"  Text="{Binding Preco}" Grid.Row="4" Grid.Column="1"  Grid.ColumnSpan="2"/>
+            <Button Grid.Row="5" Text="Enviar" Grid.ColumnSpan="3" Clicked="btn_ProdutoView"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

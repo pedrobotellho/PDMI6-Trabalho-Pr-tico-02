@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TP02.ListViewSimples">
+    <ContentPage.Content>
+        <ListView>
+            <ListView.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>Desenvolvimento de aplicativos com Xamarin</x:String>
+                    <x:String>Oliver Ramos Hernandez- CB3001539</x:String>
+                    <x:String>Pedro Henrique Botelho Lima - CB300225X</x:String>
+                </x:Array>
+            </ListView.ItemsSource>
+        </ListView>
+    </ContentPage.Content>
+</ContentPage>

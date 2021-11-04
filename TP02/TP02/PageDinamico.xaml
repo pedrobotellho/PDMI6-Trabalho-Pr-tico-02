@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TP02.PageDinamico">
+    <ContentPage.Content>
+        <StackLayout  BackgroundColor="LightGray" Padding="0,20">
+            <Button x:Name = "btnAlterarEstilo"  
+            Text = "ALTERAR ESTILO" 
+            Clicked = "btn_AlterarEstilo"
+            />
+            <Label x:Name="labelClock" HorizontalTextAlignment="Center" Padding="20"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
